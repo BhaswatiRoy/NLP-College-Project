@@ -44,3 +44,5 @@ onUserSignUp:
   traits:
     - $ref: '#/components/operationTraits/kafka'
 ```
+
+be found [here](https://v3.asyncapi.com/docs/reference/specification/v3.0.0-next-major-spec.12#operationObject). 
