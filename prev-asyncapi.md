@@ -24,3 +24,16 @@ style E fill:#F568A8,stroke:#333,stroke-width:2px
  classDef labelStyle color:#000000;
     class A,B,C,D,E,F,G,H,I,J labelStyle;
 ```
+
+Operations can be defined as an independent object in the AsyncAPI document. Operations have the following components for it's definition -
+
+|  Field Name | Type | Description |
+|---|---|---|
+| title | string | An easy to understand headline about the operation |
+| summary | string | A brief overview of the purpose of the operation |
+| description | string | A detailed explanation of the operation |
+| Channel | Reference Object Link | A `ref` pointer to the definition of the channel in which the operation is performed |
+| Action | "send" or "receive" | Uses `send` when the application sends a message to the given channel, and uses `receive` when the application receives a message from the given channel |
+| Tags | Tag Object | List of tags for logical grouping and categorization of operations |
+| Bindings | Bindings Object | A map where keys store the name of protocol and the values store protocol-specific definitions for the operation |
+| Traits | Traits Object | A list of traits to apply to the operation object. Traits must be merged using Traits Merge Mechanism. The resulting object should be a valid Operation Object |
