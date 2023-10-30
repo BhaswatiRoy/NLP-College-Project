@@ -16,8 +16,8 @@ Operations can be defined as an independent object in the AsyncAPI document. Ope
 
 |  Field Name | Type | Description |
 |---|---|---|
-| title | string | |
-| summary | string | |
+| title | string | an easy to understand headline for the operation |
+| summary | string | a `ref` pointer |
 | description | string | |
 | Channel | Reference Object Link | |
 | Action | "send" or "receive" | |
